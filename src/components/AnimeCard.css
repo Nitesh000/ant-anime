@@ -1,0 +1,59 @@
+.container {
+  position: relative;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container img:hover {
+  filter: brightness(70%);
+}
+
+.container h4 {
+  z-index: 1;
+  margin: 0;
+  padding: 10px;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.container .tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  margin: 0px;
+  padding: 5px 10px;
+  color: #fff;
+  /* make background a little transparent */
+  background-color: rgba(255, 0, 0, 0.7);
+  border-radius: 5px;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
